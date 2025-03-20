@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Asset List</title>
+</head>
+<body>
+    <h2>Uploaded Assets</h2>
+    <div>
+        <a href="{{ url_for('send_alerts', filename=filename) }}">Send Alerts</a>
+    </div>
+    <br>
+    {{ graph_html|safe }}
+    <h3>Asset List</h3>
+    {{ tables[0]|safe }}
+</body>
+</html>
